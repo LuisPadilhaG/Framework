@@ -1,0 +1,282 @@
+/* Main Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Periodic Table Container */
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Element Cell Styling */
+.element {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Maintain square aspect ratio */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.element:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.element > div {
+    position: absolute;
+}
+
+.atomic-number {
+    top: 5px;
+    left: 5px;
+    font-size: 0.7em;
+}
+
+.symbol {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.name {
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 2px;
+}
+
+/* Empty cells and spacers */
+.empty-cell, .spacer {
+    background-color: transparent;
+    border: none;
+}
+
+/* Element Group Colors */
+[data-group="nonmetal"] {
+    background-color: #3cb44b; /* Green */
+}
+
+[data-group="noble-gas"] {
+    background-color: #ffe119; /* Yellow */
+}
+
+[data-group="alkali-metal"] {
+    background-color: #4363d8; /* Blue */
+}
+
+[data-group="alkaline-earth"] {
+    background-color: #f58231; /* Orange */
+}
+
+[data-group="metalloid"] {
+    background-color: #42d4f4; /* Light Blue */
+}
+
+[data-group="halogen"] {
+    background-color: #f032e6; /* Pink */
+}
+
+[data-group="post-transition"] {
+    background-color: #e6194B; /* Red */
+}
+
+[data-group="transition"] {
+    background-color: #f58231; /* Orange */
+}
+
+[data-group="lanthanide"] {
+    background-color: #911eb4; /* Purple */
+}
+
+[data-group="actinide"] {
+    background-color: #e6beff; /* Light Purple */
+}
+
+/* Hydrogen special case (as in the image) */
+.hydrogen {
+    background-color: #4363d8; /* Blue */
+}
+
+/* Helium special case (as in the image) */
+.helium {
+    background-color: #ffe119; /* Yellow */
+}
+
+/* Specific Element Colors (matching the image) */
+.lithium, .sodium, .potassium, .rubidium, .cesium, .francium {
+    background-color: #4363d8; /* Purple-blue for alkali metals */
+}
+
+.beryllium, .magnesium, .calcium, .strontium, .barium, .radium {
+    background-color: #e6194B; /* Pink for alkaline earth metals */
+}
+
+.boron {
+    background-color: #008000; /* Green for boron */
+}
+
+.carbon, .nitrogen, .oxygen, .phosphorus, .sulfur {
+    background-color: #008000; /* Green for nonmetals */
+}
+
+.fluorine, .chlorine, .bromine, .iodine, .astatine, .tennessine {
+    background-color: #00ff00; /* Bright green for halogens */
+}
+
+.neon, .argon, .krypton, .xenon, .radon, .oganesson {
+    background-color: #ffe119; /* Yellow for noble gases */
+}
+
+.aluminum, .gallium, .indium, .tin, .thallium, .lead, .bismuth, .polonium, .nihonium, .flerovium, .moscovium, .livermorium {
+    background-color: #42d4f4; /* Light blue for post-transition metals */
+}
+
+.silicon, .germanium, .arsenic, .antimony, .tellurium {
+    background-color: #42d4f4; /* Light blue for metalloids */
+}
+
+/* Transition metals */
+.scandium, .titanium, .vanadium, .chromium, .manganese, .iron, .cobalt, .nickel, .copper, .zinc,
+.yttrium, .zirconium, .niobium, .molybdenum, .technetium, .ruthenium, .rhodium, .palladium, .silver, .cadmium,
+.hafnium, .tantalum, .tungsten, .rhenium, .osmium, .iridium, .platinum, .gold, .mercury,
+.rutherfordium, .dubnium, .seaborgium, .bohrium, .hassium, .meitnerium, .darmstadtium, .roentgenium, .copernicium {
+    background-color: #f58231; /* Orange for transition metals */
+}
+
+/* Lanthanide and Actinide Labels */
+.lanthanide-label, .actinide-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* Legend Styling */
+.legend {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.legend-item {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* Legend colors matching the element groups */
+.legend-item.alkali-metal {
+    background-color: #4363d8;
+}
+
+.legend-item.alkaline-earth {
+    background-color: #e6194B;
+}
+
+.legend-item.transition {
+    background-color: #f58231;
+}
+
+.legend-item.post-transition {
+    background-color: #42d4f4;
+}
+
+.legend-item.metalloid {
+    background-color: #42d4f4;
+}
+
+.legend-item.nonmetal {
+    background-color: #008000;
+}
+
+.legend-item.halogen {
+    background-color: #00ff00;
+}
+
+.legend-item.noble-gas {
+    background-color: #ffe119;
+}
+
+.legend-item.lanthanide {
+    background-color: #911eb4;
+}
+
+.legend-item.actinide {
+    background-color: #e6beff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .name {
+        font-size: 0.45em;
+    }
+}
+
+@media (max-width: 992px) {
+    .symbol {
+        font-size: 1em;
+    }
+    
+    .atomic-number {
+        font-size: 0.65em;
+    }
+    
+    .name {
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .periodic-table {
+        grid-gap: 3px;
+    }
+    
+    .symbol {
+        font-size: 0.9em;
+    }
+    
+    .atomic-number {
+        font-size: 0.6em;
+    }
+    
+    .name {
+        display: none; /* Hide element names on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .periodic-table {
+        grid-gap: 2px;
+    }
+    
+    .symbol {
+        font-size: 0.8em;
+    }
+    
+    .atomic-number {
+        font-size: 0.5em;
+    }
+}

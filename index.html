@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid mt-4">
+        <h1 class="text-center mb-4">Tabela periódica</h1>
+        
+        <div class="periodic-table">
+            <!-- Row 1 -->
+            <div class="element hydrogen" data-group="nonmetal">
+                <div class="atomic-number">1</div>
+                <div class="symbol">H</div>
+                <div class="name">Hidrogênio</div>
+            </div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element helium" data-group="noble-gas">
+                <div class="atomic-number">2</div>
+                <div class="symbol">He</div>
+                <div class="name">Hélio</div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="element lithium" data-group="alkali-metal">
+                <div class="atomic-number">3</div>
+                <div class="symbol">Li</div>
+                <div class="name">Lítio</div>
+            </div>
+            <div class="element beryllium" data-group="alkaline-earth">
+                <div class="atomic-number">4</div>
+                <div class="symbol">Be</div>
+                <div class="name">Berílio</div>
+            </div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element boron" data-group="metalloid">
+                <div class="atomic-number">5</div>
+                <div class="symbol">B</div>
+                <div class="name">Boro</div>
+            </div>
+            <div class="element carbon" data-group="nonmetal">
+                <div class="atomic-number">6</div>
+                <div class="symbol">C</div>
+                <div class="name">Carbono</div>
+            </div>
+            <div class="element nitrogen" data-group="nonmetal">
+                <div class="atomic-number">7</div>
+                <div class="symbol">N</div>
+                <div class="name">Nitrogênio</div>
+            </div>
+            <div class="element oxygen" data-group="nonmetal">
+                <div class="atomic-number">8</div>
+                <div class="symbol">O</div>
+                <div class="name">Oxigênio</div>
+            </div>
+            <div class="element fluorine" data-group="halogen">
+                <div class="atomic-number">9</div>
+                <div class="symbol">F</div>
+                <div class="name">Flúor</div>
+            </div>
+            <div class="element neon" data-group="noble-gas">
+                <div class="atomic-number">10</div>
+                <div class="symbol">Ne</div>
+                <div class="name">Neônio</div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="element sodium" data-group="alkali-metal">
+                <div class="atomic-number">11</div>
+                <div class="symbol">Na</div>
+                <div class="name">Sódio</div>
+            </div>
+            <div class="element magnesium" data-group="alkaline-earth">
+                <div class="atomic-number">12</div>
+                <div class="symbol">Mg</div>
+                <div class="name">Magnésio</div>
+            </div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element empty-cell"></div>
+            <div class="element aluminum" data-group="post-transition">
+                <div class="atomic-number">13</div>
+                <div class="symbol">Al</div>
+                <div class="name">Alumínio</div>
+            </div>
+            <div class="element silicon" data-group="metalloid">
+                <div class="atomic-number">14</div>
+                <div class="symbol">Si</div>
+                <div class="name">Silício</div>
+            </div>
+            <div class="element phosphorus" data-group="nonmetal">
+                <div class="atomic-number">15</div>
+                <div class="symbol">P</div>
+                <div class="name">Fósforo</div>
+            </div>
+            <div class="element sulfur" data-group="nonmetal">
+                <div class="atomic-number">16</div>
+                <div class="symbol">S</div>
+                <div class="name">Enxofre</div>
+            </div>
+            <div class="element chlorine" data-group="halogen">
+                <div class="atomic-number">17</div>
+                <div class="symbol">Cl</div>
+                <div class="name">Cloro</div>
+            </div>
+            <div class="element argon" data-group="noble-gas">
+                <div class="atomic-number">18</div>
+                <div class="symbol">Ar</div>
+                <div class="name">Argônio</div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="element potassium" data-group="alkali-metal">
+                <div class="atomic-number">19</div>
+                <div class="symbol">K</div>
+                <div class="name">Potássio</div>
+            </div>
+            <div class="element calcium" data-group="alkaline-earth">
+                <div class="atomic-number">20</div>
+                <div class="symbol">Ca</div>
+                <div class="name">Cálcio</div>
+            </div>
+            <div class="element scandium" data-group="transition">
+                <div class="atomic-number">21</div>
+                <div class="symbol">Sc</div>
+                <div class="name">Escândio</div>
+            </div>
+            <div class="element titanium" data-group="transition">
+                <div class="atomic-number">22</div>
+                <div class="symbol">Ti</div>
+                <div class="name">Titânio</div>
+            </div>
+            <div class="element vanadium" data-group="transition">
+                <div class="atomic-number">23</div>
+                <div class="symbol">V</div>
+                <div class="name">Vanádio</div>
+            </div>
+            <div class="element chromium" data-group="transition">
+                <div class="atomic-number">24</div>
+                <div class="symbol">Cr</div>
+                <div class="name">Cromo</div>
+            </div>
+            <div class="element manganese" data-group="transition">
+                <div class="atomic-number">25</div>
+                <div class="symbol">Mn</div>
+                <div class="name">Manganês</div>
+            </div>
+            <div class="element iron" data-group="transition">
+                <div class="atomic-number">26</div>
+                <div class="symbol">Fe</div>
+                <div class="name">Ferro</div>
+            </div>
+            <div class="element cobalt" data-group="transition">
+                <div class="atomic-number">27</div>
+                <div class="symbol">Co</div>
+                <div class="name">Cobalto</div>
+            </div>
+            <div class="element nickel" data-group="transition">
+                <div class="atomic-number">28</div>
+                <div class="symbol">Ni</div>
+                <div class="name">Níquel</div>
+            </div>
+            <div class="element copper" data-group="transition">
+                <div class="atomic-number">29</div>
+                <div class="symbol">Cu</div>
+                <div class="name">Cobre</div>
+            </div>
+            <div class="element zinc" data-group="transition">
+                <div class="atomic-number">30</div>
+                <div class="symbol">Zn</div>
+                <div class="name">Zinco</div>
+            </div>
+            <div class="element gallium" data-group="post-transition">
+                <div class="atomic-number">31</div>
+                <div class="symbol">Ga</div>
+                <div class="name">Gálio</div>
+            </div>
+            <div class="element germanium" data-group="metalloid">
+                <div class="atomic-number">32</div>
+                <div class="symbol">Ge</div>
+                <div class="name">Germânio</div>
+            </div>
+            <div class="element arsenic" data-group="metalloid">
+                <div class="atomic-number">33</div>
+                <div class="symbol">As</div>
+                <div class="name">Arsênio</div>
+            </div>
+            <div class="element selenium" data-group="nonmetal">
+                <div class="atomic-number">34</div>
+                <div class="symbol">Se</div>
+                <div class="name">Selênio</div>
+            </div>
+            <div class="element bromine" data-group="halogen">
+                <div class="atomic-number">35</div>
+                <div class="symbol">Br</div>
+                <div class="name">Bromo</div>
+            </div>
+            <div class="element krypton" data-group="noble-gas">
+                <div class="atomic-number">36</div>
+                <div class="symbol">Kr</div>
+                <div class="name">Criptônio</div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="element rubidium" data-group="alkali-metal">
+                <div class="atomic-number">37</div>
+                <div class="symbol">Rb</div>
+                <div class="name">Rubídio</div>
+            </div>
+            <div class="element strontium" data-group="alkaline-earth">
+                <div class="atomic-number">38</div>
+                <div class="symbol">Sr</div>
+                <div class="name">Estrôncio</div>
+            </div>
+            <div class="element yttrium" data-group="transition">
+                <div class="atomic-number">39</div>
+                <div class="symbol">Y</div>
+                <div class="name">Ítrio</div>
+            </div>
+            <div class="element zirconium" data-group="transition">
+                <div class="atomic-number">40</div>
+                <div class="symbol">Zr</div>
+                <div class="name">Zircônio</div>
+            </div>
+            <div class="element niobium" data-group="transition">
+                <div class="atomic-number">41</div>
+                <div class="symbol">Nb</div>
+                <div class="name">Nióbio</div>
+            </div>
+            <div class="element molybdenum" data-group="transition">
+                <div class="atomic-number">42</div>
+                <div class="symbol">Mo</div>
+                <div class="name">Molibdênio</div>
+            </div>
+            <div class="element technetium" data-group="transition">
+                <div class="atomic-number">43</div>
+                <div class="symbol">Tc</div>
+                <div class="name">Tecnécio</div>
+            </div>
+            <div class="element ruthenium" data-group="transition">
+                <div class="atomic-number">44</div>
+                <div class="symbol">Ru</div>
+                <div class="name">Rutênio</div>
+            </div>
+            <div class="element rhodium" data-group="transition">
+                <div class="atomic-number">45</div>
+                <div class="symbol">Rh</div>
+                <div class="name">Ródio</div>
+            </div>
+            <div class="element palladium" data-group="transition">
+                <div class="atomic-number">46</div>
+                <div class="symbol">Pd</div>
+                <div class="name">Paládio</div>
+            </div>
+            <div class="element silver" data-group="transition">
+                <div class="atomic-number">47</div>
+                <div class="symbol">Ag</div>
+                <div class="name">Prata</div>
+            </div>
+            <div class="element cadmium" data-group="transition">
+                <div class="atomic-number">48</div>
+                <div class="symbol">Cd</div>
+                <div class="name">Cádmio</div>
+            </div>
+            <div class="element indium" data-group="post-transition">
+                <div class="atomic-number">49</div>
+                <div class="symbol">In</div>
+                <div class="name">Índio</div>
+            </div>
+            <div class="element tin" data-group="post-transition">
+                <div class="atomic-number">50</div>
+                <div class="symbol">Sn</div>
+                <div class="name">Estanho</div>
+            </div>
+            <div class="element antimony" data-group="metalloid">
+                <div class="atomic-number">51</div>
+                <div class="symbol">Sb</div>
+                <div class="name">Antimônio</div>
+            </div>
+            <div class="element tellurium" data-group="metalloid">
+                <div class="atomic-number">52</div>
+                <div class="symbol">Te</div>
+                <div class="name">Telúrio</div>
+            </div>
+            <div class="element iodine" data-group="halogen">
+                <div class="atomic-number">53</div>
+                <div class="symbol">I</div>
+                <div class="name">Iodo</div>
+            </div>
+            <div class="element xenon" data-group="noble-gas">
+                <div class="atomic-number">54</div>
+                <div class="symbol">Xe</div>
+                <div class="name">Xenônio</div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="element cesium" data-group="alkali-metal">
+                <div class="atomic-number">55</div>
+                <div class="symbol">Cs</div>
+                <div class="name">Césio</div>
+            </div>
+            <div class="element barium" data-group="alkaline-earth">
+                <div class="atomic-number">56</div>
+                <div class="symbol">Ba</div>
+                <div class="name">Bário</div>
+            </div>
+            <div class="element lanthanum" data-group="lanthanide">
+                <div class="atomic-number">57</div>
+                <div class="symbol">La</div>
+                <div class="name">Lantânio</div>
+            </div>
+            <div class="element hafnium" data-group="transition">
+                <div class="atomic-number">72</div>
+                <div class="symbol">Hf</div>
+                <div class="name">Háfnio</div>
+            </div>
+            <div class="element tantalum" data-group="transition">
+                <div class="atomic-number">73</div>
+                <div class="symbol">Ta</div>
+                <div class="name">Tântalo</div>
+            </div>
+            <div class="element tungsten" data-group="transition">
+                <div class="atomic-number">74</div>
+                <div class="symbol">W</div>
+                <div class="name">Tungstênio</div>
+            </div>
+            <div class="element rhenium" data-group="transition">
+                <div class="atomic-number">75</div>
+                <div class="symbol">Re</div>
+                <div class="name">Rênio</div>
+            </div>
+            <div class="element osmium" data-group="transition">
+                <div class="atomic-number">76</div>
+                <div class="symbol">Os</div>
+                <div class="name">Ósmio</div>
+            </div>
+            <div class="element iridium" data-group="transition">
+                <div class="atomic-number">77</div>
+                <div class="symbol">Ir</div>
+                <div class="name">Irídio</div>
+            </div>
+            <div class="element platinum" data-group="transition">
+                <div class="atomic-number">78</div>
+                <div class="symbol">Pt</div>
+                <div class="name">Platina</div>
+            </div>
+            <div class="element gold" data-group="transition">
+                <div class="atomic-number">79</div>
+                <div class="symbol">Au</div>
+                <div class="name">Ouro</div>
+            </div>
+            <div class="element mercury" data-group="transition">
+                <div class="atomic-number">80</div>
+                <div class="symbol">Hg</div>
+                <div class="name">Mercúrio</div>
+            </div>
+            <div class="element thallium" data-group="post-transition">
+                <div class="atomic-number">81</div>
+                <div class="symbol">Tl</div>
+                <div class="name">Tálio</div>
+            </div>
+            <div class="element lead" data-group="post-transition">
+                <div class="atomic-number">82</div>
+                <div class="symbol">Pb</div>
+                <div class="name">Chumbo</div>
+            </div>
+            <div class="element bismuth" data-group="post-transition">
+                <div class="atomic-number">83</div>
+                <div class="symbol">Bi</div>
+                <div class="name">Bismuto</div>
+            </div>
+            <div class="element polonium" data-group="post-transition">
+                <div class="atomic-number">84</div>
+                <div class="symbol">Po</div>
+                <div class="name">Polônio</div>
+            </div>
+            <div class="element astatine" data-group="halogen">
+                <div class="atomic-number">85</div>
+                <div class="symbol">At</div>
+                <div class="name">Ástato</div>
+            </div>
+            <div class="element radon" data-group="noble-gas">
+                <div class="atomic-number">86</div>
+                <div class="symbol">Rn</div>
+                <div class="name">Radônio</div>
+            </div>
+
+            <!-- Row 7 -->
+            <div class="element francium" data-group="alkali-metal">
+                <div class="atomic-number">87</div>
+                <div class="symbol">Fr</div>
+                <div class="name">Frâncio</div>
+            </div>
+            <div class="element radium" data-group="alkaline-earth">
+                <div class="atomic-number">88</div>
+                <div class="symbol">Ra</div>
+                <div class="name">Rádio</div>
+            </div>
+            <div class="element actinium" data-group="actinide">
+                <div class="atomic-number">89</div>
+                <div class="symbol">Ac</div>
+                <div class="name">Actínio</div>
+            </div>
+            <div class="element rutherfordium" data-group="transition">
+                <div class="atomic-number">104</div>
+                <div class="symbol">Rf</div>
+                <div class="name">Ruterfórdio</div>
+            </div>
+            <div class="element dubnium" data-group="transition">
+                <div class="atomic-number">105</div>
+                <div class="symbol">Db</div>
+                <div class="name">Dúbnio</div>
+            </div>
+            <div class="element seaborgium" data-group="transition">
+                <div class="atomic-number">106</div>
+                <div class="symbol">Sg</div>
+                <div class="name">Seabórgio</div>
+            </div>
+            <div class="element bohrium" data-group="transition">
+                <div class="atomic-number">107</div>
+                <div class="symbol">Bh</div>
+                <div class="name">Bóhrio</div>
+            </div>
+            <div class="element hassium" data-group="transition">
+                <div class="atomic-number">108</div>
+                <div class="symbol">Hs</div>
+                <div class="name">Hássio</div>
+            </div>
+            <div class="element meitnerium" data-group="transition">
+                <div class="atomic-number">109</div>
+                <div class="symbol">Mt</div>
+                <div class="name">Meitnério</div>
+            </div>
+            <div class="element darmstadtium" data-group="transition">
+                <div class="atomic-number">110</div>
+                <div class="symbol">Ds</div>
+                <div class="name">Darmstádio</div>
+            </div>
+            <div class="element roentgenium" data-group="transition">
+                <div class="atomic-number">111</div>
+                <div class="symbol">Rg</div>
+                <div class="name">Roentgênio</div>
+            </div>
+            <div class="element copernicium" data-group="transition">
+                <div class="atomic-number">112</div>
+                <div class="symbol">Cn</div>
+                <div class="name">Copernício</div>
+            </div>
+            <div class="element nihonium" data-group="post-transition">
+                <div class="atomic-number">113</div>
+                <div class="symbol">Nh</div>
+                <div class="name">Nihônio</div>
+            </div>
+            <div class="element flerovium" data-group="post-transition">
+                <div class="atomic-number">114</div>
+                <div class="symbol">Fl</div>
+                <div class="name">Fleróvio</div>
+            </div>
+            <div class="element moscovium" data-group="post-transition">
+                <div class="atomic-number">115</div>
+                <div class="symbol">Mc</div>
+                <div class="name">Moscóvio</div>
+            </div>
+            <div class="element livermorium" data-group="post-transition">
+                <div class="atomic-number">116</div>
+                <div class="symbol">Lv</div>
+                <div class="name">Livermório</div>
+            </div>
+            <div class="element tennessine" data-group="halogen">
+                <div class="atomic-number">117</div>
+                <div class="symbol">Ts</div>
+                <div class="name">Tenessino</div>
+            </div>
+            <div class="element oganesson" data-group="noble-gas">
+                <div class="atomic-number">118</div>
+                <div class="symbol">Og</div>
+                <div class="name">Oganessônio</div>
+            </div>
+
+            <!-- Lanthanide Series (separate row) -->
+            <div class="element spacer"></div>
+            <div class="element spacer"></div>
+            <div class="element lanthanide-label">
+                <span>Lanthanides</span>
+            </div>
+            <div class="element cerium" data-group="lanthanide">
+                <div class="atomic-number">58</div>
+                <div class="symbol">Ce</div>
+                <div class="name">Cério</div>
+            </div>
+            <div class="element praseodymium" data-group="lanthanide">
+                <div class="atomic-number">59</div>
+                <div class="symbol">Pr</div>
+                <div class="name">Praseodímio</div>
+            </div>
+            <div class="element neodymium" data-group="lanthanide">
+                <div class="atomic-number">60</div>
+                <div class="symbol">Nd</div>
+                <div class="name">Neodímio</div>
+            </div>
+            <div class="element promethium" data-group="lanthanide">
+                <div class="atomic-number">61</div>
+                <div class="symbol">Pm</div>
+                <div class="name">Promécio</div>
+            </div>
+            <div class="element samarium" data-group="lanthanide">
+                <div class="atomic-number">62</div>
+                <div class="symbol">Sm</div>
+                <div class="name">Samário</div>
+            </div>
+            <div class="element europium" data-group="lanthanide">
+                <div class="atomic-number">63</div>
+                <div class="symbol">Eu</div>
+                <div class="name">Európio</div>
+            </div>
+            <div class="element gadolinium" data-group="lanthanide">
+                <div class="atomic-number">64</div>
+                <div class="symbol">Gd</div>
+                <div class="name">Gadolínio</div>
+            </div>
+            <div class="element terbium" data-group="lanthanide">
+                <div class="atomic-number">65</div>
+                <div class="symbol">Tb</div>
+                <div class="name">Térbio</div>
+            </div>
+            <div class="element dysprosium" data-group="lanthanide">
+                <div class="atomic-number">66</div>
+                <div class="symbol">Dy</div>
+                <div class="name">Disprósio</div>
+            </div>
+            <div class="element holmium" data-group="lanthanide">
+                <div class="atomic-number">67</div>
+                <div class="symbol">Ho</div>
+                <div class="name">Hólmio</div>
+            </div>
+            <div class="element erbium" data-group="lanthanide">
+                <div class="atomic-number">68</div>
+                <div class="symbol">Er</div>
+                <div class="name">Érbio</div>
+            </div>
+            <div class="element thulium" data-group="lanthanide">
+                <div class="atomic-number">69</div>
+                <div class="symbol">Tm</div>
+                <div class="name">Túlio</div>
+            </div>
+            <div class="element ytterbium" data-group="lanthanide">
+                <div class="atomic-number">70</div>
+                <div class="symbol">Yb</div>
+                <div class="name">Itérbio</div>
+            </div>
+            <div class="element lutetium" data-group="lanthanide">
+                <div class="atomic-number">71</div>
+                <div class="symbol">Lu</div>
+                <div class="name">Lutécio</div>
+            </div>
+
+            <!-- Actinide Series (separate row) -->
+            <div class="element spacer"></div>
+            <div class="element spacer"></div>
+            <div class="element actinide-label">
+                <span>Actinides</span>
+            </div>
+            <div class="element thorium" data-group="actinide">
+                <div class="atomic-number">90</div>
+                <div class="symbol">Th</div>
+                <div class="name">Tório</div>
+            </div>
+            <div class="element protactinium" data-group="actinide">
+                <div class="atomic-number">91</div>
+                <div class="symbol">Pa</div>
+                <div class="name">Protactínio</div>
+            </div>
+            <div class="element uranium" data-group="actinide">
+                <div class="atomic-number">92</div>
+                <div class="symbol">U</div>
+                <div class="name">Urânio</div>
+            </div>
+            <div class="element neptunium" data-group="actinide">
+                <div class="atomic-number">93</div>
+                <div class="symbol">Np</div>
+                <div class="name">Netúnio</div>
+            </div>
+            <div class="element plutonium" data-group="actinide">
+                <div class="atomic-number">94</div>
+                <div class="symbol">Pu</div>
+                <div class="name">Plutônio</div>
+            </div>
+            <div class="element americium" data-group="actinide">
+                <div class="atomic-number">95</div>
+                <div class="symbol">Am</div>
+                <div class="name">Amerício</div>
+            </div>
+            <div class="element curium" data-group="actinide">
+                <div class="atomic-number">96</div>
+                <div class="symbol">Cm</div>
+                <div class="name">Cúrio</div>
+            </div>
+            <div class="element berkelium" data-group="actinide">
+                <div class="atomic-number">97</div>
+                <div class="symbol">Bk</div>
+                <div class="name">Berquélio</div>
+            </div>
+            <div class="element californium" data-group="actinide">
+                <div class="atomic-number">98</div>
+                <div class="symbol">Cf</div>
+                <div class="name">Califórnio</div>
+            </div>
+            <div class="element einsteinium" data-group="actinide">
+                <div class="atomic-number">99</div>
+                <div class="symbol">Es</div>
+                <div class="name">Einstênio</div>
+            </div>
+            <div class="element fermium" data-group="actinide">
+                <div class="atomic-number">100</div>
+                <div class="symbol">Fm</div>
+                <div class="name">Férmio</div>
+            </div>
+            <div class="element mendelevium" data-group="actinide">
+                <div class="atomic-number">101</div>
+                <div class="symbol">Md</div>
+                <div class="name">Mendelévio</div>
+            </div>
+            <div class="element nobelium" data-group="actinide">
+                <div class="atomic-number">102</div>
+                <div class="symbol">No</div>
+                <div class="name">Nobélio</div>
+            </div>
+            <div class="element lawrencium" data-group="actinide">
+                <div class="atomic-number">103</div>
+                <div class="symbol">Lr</div>
+                <div class="name">Laurêncio</div>
+            </div>
+        </div>
+
+       
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
