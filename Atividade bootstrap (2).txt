@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Descubra o Brasil</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Descubra o Brasil</h1>
+    <p class="lead">Explore as belezas naturais, culturais e históricas do nosso país de forma única e inesquecível.</p>
+    <a class="btn btn-primary btn-lg" href="https://brasilescola.uol.com.br/sociologia/cultura-brasileira.htm" role="button">Saiba mais</a>
+  </div>
+
+  <!-- Cards em linha -->
+  <div class="container my-5" id="destinos">
+    <div class="card-deck">
+      <div class="card">
+        <img src="https://www.guiadasemana.com.br/contentFiles/system/pictures/2016/8/304944/original/rj-cristo-redentor-com-baia-de-guanabara-renato-sette-camara-11.jpg" alt="Rio de Janeiro">
+        <div class="card-body">
+          <h5 class="card-title">Rio de Janeiro</h5>
+          <p class="card-text">Praias deslumbrantes, o Cristo Redentor e o espírito vibrante do Brasil.</p>
+          <a href="https://bafafa.com.br/mais-coisas/jornal-bafafa/7-caracteristicas-marcantes-do-carioca-e-do-rio" class="btn btn-outline-primary">Ver mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.32fece50b0832409ee63d3c97981e897?rik=AAeKJCdO4e2dQA&pid=ImgRaw&r=0" alt="Amazônia">
+        <div class="card-body">
+          <h5 class="card-title">Amazônia</h5>
+          <p class="card-text">A maior floresta tropical do mundo com biodiversidade única.</p>
+          <a href="https://meuartigo.brasilescola.uol.com.br/filosofia/cultura-amazonica.htm" class="btn btn-outline-primary">Ver mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.4VgjbkpnfWbqeuOw2_Js2QHaEK?rs=1&pid=ImgDetMain" alt="Bahia">
+        <div class="card-body">
+          <h5 class="card-title">Bahia</h5>
+          <p class="card-text">Cultura afro-brasileira, música contagiante e praias paradisíacas.</p>
+          <a href="https://mundoeducacao.uol.com.br/geografia/bahia.htm#:~:text=A%20cultura%20baiana%20tamb%C3%A9m%20%C3%A9,o%20acaraj%C3%A9%20e%20o%20vatap%C3%A1." class="btn btn-outline-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Imagem grande centralizada -->
+  <div class="container text-center mb-5">
+    <img src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2459659/2417/1608/m1/fpnw/wm1/brazil-prew-mal-.jpg?1490594266&s=498a3dcbc950831e7680f93396b6b04b" class="img-fluid" alt="Paisagem brasileira">
+  </div>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
